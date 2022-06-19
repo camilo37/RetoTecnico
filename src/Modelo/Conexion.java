@@ -11,7 +11,6 @@ public class Conexion {
     private Connection cn;
     private Statement s;
     private ResultSet rs;
-    //private CallableStatement cstmt;
     
     
     public Conexion(){
@@ -158,28 +157,28 @@ public class Conexion {
         }
     }
     
-    public String[] BuscarNave(String nom){
-        
-        String Resultado[] = new String[1];
-        
-        try{     
-        s = cn.createStatement();
-        rs = s.executeQuery ("select nombre from NAVES where nombre =  " + "'"+ nom + "'");
-           
-        rs.next();
-        Resultado[0] = rs.getString(1);
-       // Resultado[1] = rs.getString(2);
-        //Resultado[2] = rs.getString(3);
-       // Resultado[3] = rs.getString(4);
-        
-        return Resultado;
-
-        }catch(Exception ex){
-            
-            return null;
-            
-        }
-    }
+//    public String[] BuscarNave(String nom){
+//        
+//        String Resultado[] = new String[1];
+//        
+//        try{     
+//        s = cn.createStatement();
+//        rs = s.executeQuery ("select nombre from NAVES where nombre =  " + "'"+ nom + "'");
+//           
+//        rs.next();
+//        Resultado[0] = rs.getString(1);
+//       // Resultado[1] = rs.getString(2);
+//        //Resultado[2] = rs.getString(3);
+//       // Resultado[3] = rs.getString(4);
+//        
+//        return Resultado;
+//
+//        }catch(Exception ex){
+//            
+//            return null;
+//            
+//        }
+//    }
        
    
     public void cerrarConexion(){

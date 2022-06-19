@@ -3,8 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/CAMILO/Documents/NetBeansProjects/RectoTecnico/src/Controlador/CNaves.java</file>
+            <file>file:/C:/Users/CAMILO/Documents/NetBeansProjects/RectoTecnico/src/Modelo/Conexion.java</file>
+            <file>file:/C:/Users/CAMILO/Documents/NetBeansProjects/RectoTecnico/src/Controlador/CLanzadora.java</file>
+            <file>file:/C:/Users/CAMILO/Documents/NetBeansProjects/RectoTecnico/src/Controlador/CTripuladas.java</file>
             <file>file:/C:/Users/CAMILO/Documents/NetBeansProjects/RectoTecnico/src/RectoTecnico/ConsulTripuladas.java</file>
+            <file>file:/C:/Users/CAMILO/Documents/NetBeansProjects/RectoTecnico/src/Controlador/CNoTripuladas.java</file>
             <file>file:/C:/Users/CAMILO/Documents/NetBeansProjects/RectoTecnico/src/RectoTecnico/ConsulLanzadora.java</file>
+            <file>file:/C:/Users/CAMILO/Documents/NetBeansProjects/RectoTecnico/src/RectoTecnico/ConsulNoTripulada.java</file>
             <file>file:/C:/Users/CAMILO/Documents/NetBeansProjects/RectoTecnico/src/RectoTecnico/Inicio.java</file>
         </group>
     </open-files>
