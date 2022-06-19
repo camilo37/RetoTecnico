@@ -1,0 +1,46 @@
+--Cre la BD NavesEspaciales
+Create database NavesEspaciales
+
+use NavesEspaciales
+
+--------------------------------------------------
+--Crear la tabla NAVES
+Create table NAVES(
+
+nombre varchar(50) primary key not null,
+peso int not null,
+altura int not null,
+)
+----------------------------------------------------------------------
+--Crear la tabla NLANZADORA
+Create table NLANZADORA (
+
+nombre varchar(50) primary key not null,
+tonelCargar int not null,
+constraint fk_nomLanzadora foreign key(nombre) references NAVES(nombre)
+)
+
+----------------------------------------------------------------------
+--Crear la tabla NOTRIPULADAS
+Create table NOTRIPULADAS (
+
+nombre varchar(50) primary key not null,
+empuje int not null,
+constraint fk_nomNoTripuladas foreign key(nombre) references NAVES(nombre)
+)
+
+----------------------------------------------------------------------
+--Crear la tabla TRIPULADAS
+Create table TRIPULADAS (
+
+nombre varchar(50) primary key not null,
+capasidad int not null,
+constraint fk_nomTripuladas foreign key(nombre) references NAVES(nombre)
+)
+
+---------------EJEMPLOS
+
+SELECT * FROM NAVES
+SELECT * FROM NLANZADORA
+
+SELECT * FROM NAVES na INNER JOIN NLANZADORA lanza ON na.nombre = lanza.nombre
